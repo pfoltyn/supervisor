@@ -24,6 +24,7 @@ RUN \
         musl \
         openssl \
         yaml \
+        python3-cryptography \
     \
     && curl -Lso /usr/bin/cosign "https://github.com/home-assistant/cosign/releases/download/${COSIGN_VERSION}/cosign_${BUILD_ARCH}" \
     && chmod a+x /usr/bin/cosign
